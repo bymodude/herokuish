@@ -88,5 +88,4 @@ procfile-load-profile() {
 procfile-setup-home() {
 	export HOME="$app_path"
 	usermod --home "$app_path" "$unprivileged_user" > /dev/null 2>&1
-	chown -R "$unprivileged_user:$unprivileged_group" "$app_path"
 }
